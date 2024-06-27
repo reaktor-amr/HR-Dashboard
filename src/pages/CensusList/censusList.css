@@ -1,0 +1,47 @@
+.census-table table {
+  width: 100% !important;
+}
+
+.table-badge {
+  background-color: #f5f6f6;
+  border-radius: 16px;
+  padding: 5px 5px;
+  margin: 0px;
+  width: auto;
+  text-align: center;
+}
+.table-badge p {
+  margin: 0px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.census-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.searchbox-icon {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #f2ede9;
+  border-radius: 8px;
+  padding: 3px 10px;
+  margin-right: 10px;
+}
+
+.searchbox-icon input,
+.searchbox-icon input::placeholder {
+  border: none;
+  font-family: "inter";
+  color: #abb2b5;
+}
+
+.search-icon {
+  margin-top: 5px;
+  margin-right: 5px;
+}

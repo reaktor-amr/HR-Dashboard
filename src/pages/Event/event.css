@@ -1,0 +1,27 @@
+.event-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #5043ed;
+  border-radius: 8px;
+  margin: 0px 10px 10px 10px;
+  padding: 8px 15px;
+}
+
+.event-button p {
+  margin: 0px;
+  margin-left: 5px;
+  color: #5043ed;
+}
+
+.fill-btn-bg {
+  background-color: #5043ed;
+}
+
+.fill-btn-bg p {
+  color: #fff;
+}
+
+.offline {
+  color: #abb2b5 !important;
+}
