@@ -6,7 +6,7 @@ import UpcommingEvents from "../component/upcommingEvent";
 import ActivityHistory from "../component/activityHistory";
 
 function Dashboard() {
-  let percentage = 78;
+  const percentage = 78;
 
   return (
     <>

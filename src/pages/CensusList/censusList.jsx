@@ -33,198 +33,40 @@ function CensusList() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>John Deo</td>
-              <td>1998/03/10</td>
-              <td>
-                <div className="table-badge">
-                  <p>Male</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Married</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Employee</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Abu Dhabi</p>
-                </div>
-              </td>
-              <td>
-                <div className="census-edit">
+            {USERS.map((user, index) => (
+              <tr key={index}>
+                <td>{user.name}</td>
+                <td>{user.dateOfBirth}</td>
+                <td>
                   <div className="table-badge">
-                    <p>C-Level</p>
+                    <p>{user.gender}</p>
                   </div>
-                  <IconPencil color="#5043ED" size={20} />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>John Deo</td>
-              <td>1998/03/10</td>
-              <td>
-                <div className="table-badge">
-                  <p>Male</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Married</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Employee</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Abu Dhabi</p>
-                </div>
-              </td>
-              <td>
-                <div className="census-edit">
+                </td>
+                <td>
                   <div className="table-badge">
-                    <p>C-Level</p>
+                    <p>{user.maritalStatus}</p>
                   </div>
-                  <IconPencil color="#5043ED" size={20} />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>John Deo</td>
-              <td>1998/03/10</td>
-              <td>
-                <div className="table-badge">
-                  <p>Male</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Married</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Employee</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Abu Dhabi</p>
-                </div>
-              </td>
-              <td>
-                <div className="census-edit">
+                </td>
+                <td>
                   <div className="table-badge">
-                    <p>C-Level</p>
+                    <p>{user.status}</p>
                   </div>
-                  <IconPencil color="#5043ED" size={20} />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>John Deo</td>
-              <td>1998/03/10</td>
-              <td>
-                <div className="table-badge">
-                  <p>Male</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Married</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Employee</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Abu Dhabi</p>
-                </div>
-              </td>
-              <td>
-                <div className="census-edit">
+                </td>
+                <td>
                   <div className="table-badge">
-                    <p>C-Level</p>
+                    <p>{user.emirate}</p>
                   </div>
-                  <IconPencil color="#5043ED" size={20} />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>John Deo</td>
-              <td>1998/03/10</td>
-              <td>
-                <div className="table-badge">
-                  <p>Male</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Married</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Employee</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Abu Dhabi</p>
-                </div>
-              </td>
-              <td>
-                <div className="census-edit">
-                  <div className="table-badge">
-                    <p>C-Level</p>
+                </td>
+                <td>
+                  <div className="census-edit">
+                    <div className="table-badge">
+                      <p>{user.category}</p>
+                    </div>
+                    <IconPencil color="#5043ED" size={20} />
                   </div>
-                  <IconPencil color="#5043ED" size={20} />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>John Deo</td>
-              <td>1998/03/10</td>
-              <td>
-                <div className="table-badge">
-                  <p>Male</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Married</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Employee</p>
-                </div>
-              </td>
-              <td>
-                <div className="table-badge">
-                  <p>Abu Dhabi</p>
-                </div>
-              </td>
-              <td>
-                <div className="census-edit">
-                  <div className="table-badge">
-                    <p>C-Level</p>
-                  </div>
-                  <IconPencil color="#5043ED" size={20} />
-                </div>
-              </td>
-            </tr>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -233,3 +75,43 @@ function CensusList() {
 }
 
 export default CensusList;
+
+
+const USERS = [
+  {
+    name: "John Doe",
+    dateOfBirth: "1998/03/10",
+    gender: "Male",
+    maritalStatus: "Married",
+    status: "Employee",
+    emirate: "Abu Dhabi",
+    category: "C-Level"
+  },
+  {
+    name: "John Doe",
+    dateOfBirth: "1998/03/10",
+    gender: "Male",
+    maritalStatus: "Married",
+    status: "Employee",
+    emirate: "Abu Dhabi",
+    category: "C-Level"
+  },
+  {
+    name: "John Doe",
+    dateOfBirth: "1998/03/10",
+    gender: "Male",
+    maritalStatus: "Married",
+    status: "Employee",
+    emirate: "Abu Dhabi",
+    category: "C-Level"
+  },
+  {
+    name: "John Doe",
+    dateOfBirth: "1998/03/10",
+    gender: "Male",
+    maritalStatus: "Married",
+    status: "Employee",
+    emirate: "Abu Dhabi",
+    category: "C-Level"
+  }
+]
